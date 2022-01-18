@@ -1,8 +1,9 @@
 # Web3 - Full Tutorial
 
-The repo 
+The demo contains a basic web3 app and smart contract for minting NFTs.
 
-See it in action in the [Web3 NFT Tutorial]() on YouTube.
+- See it in action in the [Web3 NFT Tutorial](https://youtu.be/meTpMP0J5E8) on YouTube.
+- Follow the full [Web3 Tutorial](https://fireship.io/lessons/web3-solidity-hardhat-react-tutorial) on Fireship.
 
 ## Usage
 
@@ -14,11 +15,11 @@ npm install
 npx hardhat node
 
 # terminal 2
-npx compile
-npx hardhat hardhat run scripts/sample-script.js --network localhost
+npx hardhat compile
+npx hardhat run scripts/sample-script.js --network localhost
 
 # terminal 3 
 npm run dev
 ```
 
-- Update the deployed contract address in `compoonents/Home.js` 
+Update the deployed contract address in `compoonents/Home.js` 
