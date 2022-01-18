@@ -24,6 +24,7 @@ contract FiredGuys is ERC721, ERC721URIStorage, Ownable {
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
         _setTokenURI(tokenId, uri);
+        existingURIs[uri] = 1;
     }
 
     // The following functions are overrides required by Solidity.
