@@ -9,6 +9,7 @@ The demo contains a basic web3 app and smart contract for minting NFTs.
 
 ```bash
 git clone <this-repo>
+cd web3-nft-dapp-tutorial
 npm install
 
 # terminal 1
