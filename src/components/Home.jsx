@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 import FiredGuys from '../artifacts/contracts/MyNFT.sol/FiredGuys.json';
 
-const contractAddress = 'YOUR_DEPLOYED_CONTRACT_ADDRESS';
+const contractAddress = '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512';
 
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 
@@ -49,6 +49,7 @@ function Home() {
 }
 
 function NFTImage({ tokenId, getCount }) {
+  console.log('signer = ', signer)
   const contentId = 'Qmdbpbpy7fA99UkgusTiLhMWzyd3aETeCFrz7NpYaNi6zY';
   const metadataURI = `${contentId}/${tokenId}.json`;
   const imageURI = `https://gateway.pinata.cloud/ipfs/${contentId}/${tokenId}.png`;
