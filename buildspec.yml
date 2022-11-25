@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+       - npm install
+       - |
+        npx hardhat node &
+        npx hardhat compile
+        npx hardhat run scripts/sample-script.js --network localhost
