@@ -8,3 +8,6 @@ phases:
         npx hardhat node &
         npx hardhat compile
         npx hardhat run scripts/sample-script.js --network localhost
+artifacts:
+  files:
+    - '**/*'
