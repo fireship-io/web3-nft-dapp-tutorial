@@ -19,7 +19,7 @@ async function main() {
 
   await firedGuys.deployed();
 
-  console.log("FiredGuys NFT deployed to:", firedGuys.address);
+  console.log("CONTRACT_ADDR=", firedGuys.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
