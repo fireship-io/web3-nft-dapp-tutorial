@@ -11,4 +11,5 @@ phases:
         npx hardhat run scripts/sample-script.js --network localhost
 artifacts:
   files:
-    - 'src/artifacts/*'
+    - '**/*'
+  base-directory: 'src/artifacts'
